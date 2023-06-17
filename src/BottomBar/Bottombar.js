@@ -1,6 +1,6 @@
 import React from 'react';
 import {  Link } from "react-router-dom";
-const Bottom= () =>{
+const Bottombar = () =>{
   return (
   <div className='All'>
     <li>
@@ -18,4 +18,4 @@ const Bottom= () =>{
   </div>
   );
 }
-export default Bottom;
+export default Bottombar;

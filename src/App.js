@@ -1,8 +1,9 @@
 import React, { useEffect, useContext } from 'react'
-import Button from './Dashboard/Page1/context/components/Button'
-import CountdownAnimation from './Dashboard/Page1/context/components/Countdown'
-import SetPomodoro from './Dashboard/Page1/context/components/SetPomodor'
-import { SettingsContext } from './Dashboard/Page1/context/SettingContext'
+import Button from './Dashboard1/Components/Button'
+import CountdownAnimation from './Dashboard1/Components/Countdown'
+import SetPomodoro from './Dashboard1/Components/SetPomodor'
+import { SettingsContext } from './Dashboard1/context/SettingContext'
+import Bottombar from './BottomBar/Bottombar'
 
 const App = () => {
 
@@ -64,6 +65,7 @@ const App = () => {
           <Button title="Pause" activeClass={startAnimate ? 'active' : undefined} _callback={pauseTimer} />
         </div>
       </> : <SetPomodoro />}
+      <Bottombar/>
     </div>
   )
 }
