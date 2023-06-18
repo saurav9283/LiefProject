@@ -1,9 +1,10 @@
 import React, { useEffect, useContext } from 'react'
-import Button from './Dashboard1/Components/Button'
-import CountdownAnimation from './Dashboard1/Components/Countdown'
-import SetPomodoro from './Dashboard1/Components/SetPomodor'
-import { SettingsContext } from './Dashboard1/context/SettingContext'
-import Bottombar from './BottomBar/Bottombar'
+import Button from '../Dashboard1/Components/Button'
+import CountdownAnimation from '../Dashboard1/Components/Countdown'
+import SetPomodoro from '../Dashboard1/Components/SetPomodor'
+import { SettingsContext } from '../Dashboard1/context/SettingContext'
+import Bottombar from '../BottomBar/Bottombar'
+import "./Home.css"
 
 const App = () => {
 
