@@ -37,26 +37,6 @@ const SetPomodoro = () => {
                 break;
         }
         
-        // switch (name) {
-        //     case 'work':
-        //         setNewTimer({
-        //             ...newTimer,
-        //             work: parseInt(value)
-        //         })
-        //         break;
-        //     case 'shortBreak':
-        //         setNewTimer({
-        //             ...newTimer,
-        //             short: parseInt(value)
-        //         })
-        //         break;
-        //     case 'longBreak':
-        //         setNewTimer({
-        //             ...newTimer,
-        //             long: parseInt(value)
-        //         })
-        //         break;
-        // }
     }
     const handleSubmit = e => {
         e.preventDefault()

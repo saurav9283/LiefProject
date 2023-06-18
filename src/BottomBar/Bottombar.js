@@ -15,7 +15,7 @@ const Bottombar = () =>{
       <td className='d1'  onClick={()=>navigate('/')}><img src={d1} alt="Loading..." /></td>
       <td onClick={()=>navigate('/todo')} className='d2'><img src={d2} alt="Loading..." /></td>
       <td className='d3'><img src={d3} alt="Loading..." /></td>
-      <td className='d4'><img src={d4} alt="Loading..." /></td>
+      <td onClick={()=>navigate('/setting')} className='d4'><img src={d4} alt="Loading..." /></td>
     </tr>
   </div>
   );

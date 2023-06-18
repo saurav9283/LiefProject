@@ -42,7 +42,7 @@ function MyToDo() {
     return (
       <div className="App">
         <div className="container">
-          <h1>Todo List App</h1>
+          <h1>ADD YOUR TASK</h1>
           <TodoForm
             handleSubmit={handleSubmit}
             todo={todo}
