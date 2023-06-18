@@ -1,12 +1,12 @@
 import React, { useEffect, useContext } from 'react'
-import Button from '../Dashboard1/Components/Button'
-import CountdownAnimation from '../Dashboard1/Components/Countdown'
-import SetPomodoro from '../Dashboard1/Components/SetPomodor'
-import { SettingsContext } from '../Dashboard1/context/SettingContext'
-import Bottombar from '../BottomBar/Bottombar'
+import Button from '../Button'
+import CountdownAnimation from '../Countdown'
+import SetPomodoro from '../SetPomodor'
+import { SettingsContext } from '../../context/SettingContext'
+import Bottombar from '../../../BottomBar/Bottombar'
 import "./Home.css"
 
-const App = () => {
+const Home = () => {
 
   const {
     pomodoro,
@@ -60,15 +60,18 @@ const App = () => {
                 {children}
               </CountdownAnimation>
           </div>
-        </div>
-        <div className="button-wrapper">
+          <div className="button-wrapper">
           <Button title="Start" activeClass={!startAnimate ? 'active' : undefined} _callback={startTimer} />
           <Button title="Pause" activeClass={startAnimate ? 'active' : undefined} _callback={pauseTimer} />
         </div>
+        </div>
+        {/* <div className="button-wrapper">
+          <Button title="Start" activeClass={!startAnimate ? 'active' : undefined} _callback={startTimer} />
+          <Button title="Pause" activeClass={startAnimate ? 'active' : undefined} _callback={pauseTimer} />
+        </div> */}
       </> : <SetPomodoro />}
-      <Bottombar/>
     </div>
   )
 }
 
-export default App
+export default Home
