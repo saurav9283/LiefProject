@@ -1,21 +1,28 @@
 import React from 'react'
+import Popup from '../Dashboard4/Popup'
 import './Home.css';
-import right from '../image/right.png'
 function Home() {
+  
   return (
     <div className='container'>
       <div className='editInD1'>
         <h4>Edit Your Settings</h4>
         <hr></hr>
-        <h3>Pomodoro <img style={{width:"20px" , marginLeft:"120px"}} src={right} alt="Loading..." /></h3>
+        {/* <div className='targetButton'> */}
+            <span></span><h3>Pomodoro</h3><Popup/><span/>
+        {/* </div> */}
         <hr></hr>
-        <h3>Sort Break <img style={{width:"20px" , marginLeft:"120px"}} src={right} alt="Loading..." /></h3>
+        <span></span><h3>Sort Break</h3><Popup/><span/>
         <hr></hr>
-        <h3>Long Break <img style={{width:"20px" , marginLeft:"120px"}} src={right} alt="Loading..." /></h3>
+        <span></span><h3>Long Break</h3><Popup/><span/>
         <hr></hr>
       </div>
+      <Popup/>
     </div>
   )
 }
 
 export default Home
+
+
+

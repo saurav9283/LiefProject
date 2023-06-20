@@ -13,7 +13,7 @@ import Setting from '../src/Dashboard4/Home'
 ReactDOM.render(
   <SettingsContextProvider><BrowserRouter>
   <Routes>
-  <Route path='/' element= {<App />}>
+    <Route path='/' element= {<App />}>
     <Route path='/' element= {<DashBoard/>}/>
     <Route path='/todo' element= {<MyToDo/>}/>
     <Route path='/setting' element= {<Setting/>}/> 
