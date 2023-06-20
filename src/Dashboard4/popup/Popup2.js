@@ -1,8 +1,6 @@
 import React, { useState,useContext} from "react";
-import Home from "../Dashboard4/Home"
-import { SettingsContext } from '../Dashboard1/context/SettingContext'
-import UpdateButton from '../BottomBar/UpdateButton'
-import "./Popup.css";
+import { SettingsContext } from '../../Dashboard1/context/SettingContext'
+import "./Popup2.css";
 
 export default function Modal() {
   const [modal, setModal] = useState(false);
@@ -15,6 +13,7 @@ export default function Modal() {
 })
 
 const {updateExecute} = useContext(SettingsContext)
+const [updateValue2 , setUpdateValue2] = useState('')
 
 const handleChange = input => {
     const {name, value} = input.target
@@ -23,6 +22,7 @@ const handleChange = input => {
             setNewTimer({
                 ...newTimer,
                 work: parseInt(value)
+
             });
             break;
         case 'shortBreak':
@@ -30,6 +30,7 @@ const handleChange = input => {
                 ...newTimer,
                 short: parseInt(value)
             });
+            setUpdateValue2(value)
             break;
         case 'longBreak':
             setNewTimer({
@@ -58,6 +59,7 @@ const handleSubmit = e => {
 
   return (
     <>
+    <span className="valueUpdate">{updateValue2}</span>
       <button onClick={toggleModal} className="btn-modal">
         Update
       </button>
